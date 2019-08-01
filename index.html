@@ -11,36 +11,27 @@
 
 <h1>Guess what letter I'm thinking of....</h1>
 
+<h3>Wins: ""</h3>
 
-<script>
-    const compGuess = "";
-    const abc = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-    const abcLength = abc.length;
-    console.log(abc.length)
+<h3>Losses: ""</h3>
 
-</script>
+<h3>You have "" guesses left. Make it a good one!</h3>
 
-can use forEach??
-for (let i = 0; i < abc.length; i++) {
-    result += abc.charAt(Math.floor(Math.random() *))
-}
-return result;
-}
-console.log()
+<h3>So far, you guessed: ""</h3>
 
-Wins: (# of times the user has guessed the letter correctly)
+    <script>
+    
+        const compGuess = "i";
+        const abc = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+        
+        console.log(abc.length);
 
-Losses: (# of times the user has guessed the correct letter)
-
-Guesses Left: (# of guesses left. This will update)
-
-Your Guesses so Far: (the specific letters that the user typed. Display these until the user either wins or loses.)
-
-When the player wins, increase the wins counter and start the game over again (without refreshing the page)
-
-When the player loses, increase the Losses counter and restart the game without a page refresh.
-
-
-
+        function compguess() {
+            for ( let i = 0; i < abc.length; i++ ) {
+            result += abc.charAt(Math.floor(Math.random() * abc.length));
+        }
+        console.log(compguess(result));
+        }
+    </script>
 </body>
 </html>
