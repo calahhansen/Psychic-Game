@@ -7,31 +7,21 @@
 </head>
 <body>
     
-<h3>Description: The app randomly picks a letter, and the user has to guess which letter the app chose.</h3>
+<h2>Description: The app randomly picks a letter, and the user has to guess which letter the app chose.</h2>
 
 <h1>Guess what letter I'm thinking of....</h1>
 
-<h3>Wins: ""</h3>
+<h3 id="wins-text"></h3>
 
-<h3>Losses: ""</h3>
+<h3 id="losses-text"></h3>
 
-<h3>You have "" guesses left. Make it a good one!</h3>
+<h3 id="clicks-text"></h3>
 
-<h3>So far, you guessed: ""</h3>
+<h3 id="user-guesses">So far, you guessed: ""</h3>
 
-    <script>
+    <script src="./assets/javascript/game.js">
     
-        const compGuess = "i";
-        const abc = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-        
-        console.log(abc.length);
-
-        function compguess() {
-            for ( let i = 0; i < abc.length; i++ ) {
-            result += abc.charAt(Math.floor(Math.random() * abc.length));
-        }
-        console.log(compguess(result));
-        }
+       
     </script>
 </body>
 </html>
